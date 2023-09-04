@@ -1,9 +1,15 @@
+import { Route, Routes } from "react-router-dom";
 import Huddle from "./Huddle-component/Huddle";
+
+import Home from "./Home";
 
 function App() {
   return (
     <>
-      <Huddle />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/huddle" element={<Huddle />} />
+      </Routes>
     </>
   );
 }

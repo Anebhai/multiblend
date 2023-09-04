@@ -19,7 +19,7 @@ export default function Footer() {
             <li>example@huddle.com</li>
           </ul>
           <ul>
-            <li>About Ussssss</li>
+            <li>About Us</li>
             <li>What We Do</li>
             <li>FAQ</li>
           </ul>
