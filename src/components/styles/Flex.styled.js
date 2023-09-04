@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Flex = styled.div`
   display: flex;
   align-items: center;
-
+/* &>V means its immediate child not grand child */
   & > div,
   & > ul {
     flex: 1;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledCard = styled.div`
   display: flex;
@@ -8,7 +8,8 @@ export const StyledCard = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   margin: 40px 0;
   padding: 60px;
-  flex-direction: ${({ layout }) => layout || 'row'};
+  /* Very important trick so that we reverse only even rows by using this logic in parent <StyledCard layout={id % 2 === 0 && 'row-reverse'}>*/
+  flex-direction: ${({ layout }) => layout || "row"};
 
   img {
     width: 80%;
@@ -21,4 +22,4 @@ export const StyledCard = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
   }
-`
+`;

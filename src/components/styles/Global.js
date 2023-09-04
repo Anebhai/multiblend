@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
+// *Remember createGlobalStyle destructure and use it as global styles.
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
@@ -8,6 +9,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    /* Here the props are destructured as its a object we are using parentheis to wrap */
+
     background: ${({ theme }) => theme.colors.body};
     color: hsl(192, 100%, 9%);
     font-family: 'Poppins', sans-serif;
@@ -23,6 +26,6 @@ const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
 }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;
