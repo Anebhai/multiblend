@@ -5,7 +5,7 @@ function Home() {
   return (
     <BodyWrapper>
       <ContainerWrapper>
-        <h1>Multiblend Projects</h1>
+        <h1>Twinblend</h1>
         <NavWrapper>
           <ul>
             <li>
