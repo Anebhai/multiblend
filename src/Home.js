@@ -14,8 +14,8 @@ function Home() {
               </Link>
             </li>
             <li>
-              <Link to="/pizza-app" style={linkStyle}>
-                Pizza-app
+              <Link to="/pizzas" style={linkStyle}>
+                Pizza-Menu
               </Link>
             </li>
             <li>
@@ -24,8 +24,8 @@ function Home() {
               </Link>
             </li>
             <li>
-              <Link to="/pizza-app" style={linkStyle}>
-                Pizza-app
+              <Link to="/pizza" style={linkStyle}>
+                Pizza-Menu
               </Link>
             </li>
             <li>
@@ -34,8 +34,8 @@ function Home() {
               </Link>
             </li>
             <li>
-              <Link to="/pizza-app" style={linkStyle}>
-                Pizza-app
+              <Link to="/pizza" style={linkStyle}>
+                Pizza-Menu
               </Link>
             </li>
             <li>
@@ -44,8 +44,8 @@ function Home() {
               </Link>
             </li>
             <li>
-              <Link to="/pizza-app" style={linkStyle}>
-                Pizza-app
+              <Link to="/pizza" style={linkStyle}>
+                Pizza-Menu
               </Link>
             </li>
           </ul>
@@ -58,6 +58,8 @@ function Home() {
 const BodyWrapper = styled.body`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
   background-color: #6f1d1b;
+  background-image: url("images/multiblend.jpg");
+  background-size: cover;
 
   height: 100vh;
   color: #ffe6a7;
@@ -97,7 +99,7 @@ const NavWrapper = styled.nav`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    align-content: center;
+    align-items: center;
 
     @media (max-width: 900px) {
       font-size: 28px;
